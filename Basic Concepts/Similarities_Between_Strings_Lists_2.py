@@ -38,6 +38,6 @@ Type "help", "copyright", "credits" or "license()" for more information.
 >>> #in turn both spam and cheese are pointing to the same memory location (list)
 >>> 
 >>> 
->>> #immutable values don't have this problems because they can't be modified "in place". They can only be replaced by new values
+>>> #immutable values do not have this problem because they can not be modified "in place". They can only be replaced by new values
 >>> 
 >>> 
