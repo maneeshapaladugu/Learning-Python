@@ -10,16 +10,14 @@ Type "help", "copyright", "credits" or "license()" for more information.
 >>> random.randint(1,10)
 4
 >>> 
->>> 
->>> import random, sys, os, math'
-SyntaxError: EOL while scanning string literal
->>> import random, sys, os, math
+>>>
+>>> import random, sys, os, math  #To import multiple modules
 >>> from random import *
 >>> randint(1,10)
 9
 >>> sys.exit
 <built-in function exit>
->>> sys.exit()
+
 >>> 
 >>> 
 >>> import sys
@@ -31,4 +29,8 @@ SyntaxError: EOL while scanning string literal
 >>> pyperclip.copy('Hello world!')
 >>> pyperclip.paste()
 'Hello world!'
->>> 
+>>>
+#******************************************
+#use 'import random' or 'from random import *'
+from random import *
+print(randint(1,10))
