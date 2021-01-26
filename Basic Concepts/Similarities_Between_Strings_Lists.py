@@ -1,21 +1,21 @@
 >>> list('Hello')
 ['H', 'e', 'l', 'l', 'o']
 >>> name = 'Maneesha'
->>> name[0]
+>>> name[0]#To access first element in string or list
 'M'
 >>> name[1]
 'a'
 >>> name[2]
 'n'
->>> name[-1]
+>>> name[-1]#To access last element in string or list
 'a'
->>> name[1:3]
+>>> name[1:3]#String or list slicing to take a sublist from a list and substring from a string
 'an'
 >>> 'ee' in name
 True
 >>> 'she' in name
 False
->>> for letter in name:
+>>> for letter in name: #a string or a list can be used here to loop through
 	print(letter)
 
 	
@@ -28,10 +28,9 @@ s
 h
 a
 >>> 
->>>  #mutable and immutable datatypes
->>> #list is mutable -it can be changes
->>> #*changed
->>> #string value is immutable - it can not be changed
+>>> #mutable and immutable datatypes
+>>> #list is mutable -> it can be changed
+>>> #string value is immutable -> it can not be changed
 >>> 
 >>> name = 'Zophie the cat'
 >>> name[7]
