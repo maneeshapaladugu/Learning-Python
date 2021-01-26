@@ -36,7 +36,7 @@ age = input()
 print('Your age will be ' + str(int(age)+1) + ' in an year')#Solution to below error
 
 age = input()
-print('Your age will be ' + str(age+1) + ' in an year')  #Throws TypeError: can only concatenate str (not "int") to str
+print('Your age will be ' + str(age+1) + ' in an year')  #Here age is a string and str(age+1) throws TypeError: can only concatenate str (not "int") to str. 
 
 
 
