@@ -99,11 +99,11 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
 '27'
 >>> myage = 25
 >>> int(myage) evaluates to int('25') and it evaluates to 25
-SyntaxError: invalid syntax
+
 >>> str(int(myage) + 1)
 '26'
 >>> str() call evaluates to string value
-SyntaxError: invalid syntax
+
 >>> 
 >>> 
 >>> True
@@ -156,7 +156,7 @@ True
 False
 >>> 42 <= 42
 True
->>> myage = 25
+>>> myage = 24
 >>> myage <30
 True
 >>> 42 = '42'
@@ -174,11 +174,11 @@ False
 True
 >>> 
 >>> 
->>> myage = 25
->>> mypet = 'dog'
->>> myage > 20 and mypet == 'dog'
+>>> myage = 24
+>>> mypet = 'rabbit'
+>>> myage > 20 and mypet == 'rabbit'
 True
->>> myage < 20 and mypet == 'dog'
+>>> myage < 20 and mypet == 'rabbit'
 False
 >>>
 
