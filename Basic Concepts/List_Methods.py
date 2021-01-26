@@ -95,7 +95,7 @@ ValueError: list.remove(x): x not in list
 >>> spam
 [2, 5, 3.14, 1, -7]
 
->>> spam.sort()
+>>> spam.sort()#The sort() method sorts the list ascending by default
 >>> spam
 [-7, 1, 2, 3.14, 5]
 >>> 
@@ -104,7 +104,7 @@ ValueError: list.remove(x): x not in list
 >>> spam
 ['ants', 'cats', 'dogs', 'badgers', 'elephants']
 
->>> spam.sort()#By deafult, reverse parameter is false
+>>> spam.sort()#Reverse parameter is optional and false by default
 >>> spam
 ['ants', 'badgers', 'cats', 'dogs', 'elephants']
 
@@ -135,7 +135,7 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 >>> 
 
 >>> spam = ['a', 'B', 'A', 'b']
->>> spam.sort()
+>>> spam.sort() 
 >>> spam
 ['A', 'B', 'a', 'b']
 >>> 
