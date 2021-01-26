@@ -17,20 +17,22 @@ print(div42by(1))  #42.0
 #int('six') -> Output: ValueError: invalid iteral for int() with base 10: 'six'
 
 
+#*********************************************************
 
 print('How many computers do you have?')
 numComp = input()
 try:
-    assert int(numComp) > 0  #Test if it is True
+    assert int(numComp) > 0  #if condition returns False, AssertionError is raised
+    
     if int(numComp) >= 4:
         print('That is a lot of computers')
     else:
         print('That is not that many computers')
-except ValueError:
+        
+except ValueError:  #If input is not in digits
     print('You did not enter a number')
 except AssertionError:
     print('You entered a negative number')
-
 
 
 
