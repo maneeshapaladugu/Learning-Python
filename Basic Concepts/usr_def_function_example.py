@@ -34,34 +34,36 @@ print(newNumber)
 
 #print() return value is None
 #spam = print()
-#spam -> diaplys nothing
+#spam -> has nothing
 #spam == None  -> displays True
 
 #************************************************
-#Below print() function call automatically adds new line to the passed string
+#print() function call automatically adds new line to the passed string
+
+print('Hello')
+print('World')
 #Output:
 #Hello
 #World
-print('Hello')
-print('World')
 
 #**************************************************
-#Keywords arguments to functions are optional
+
 #The print function has keyword arguments end and sep
+#Keywords arguments to functions are optional
 
 #Keyword arguement end makes below print() function call without new line at the end of string Hello
+
+print('Hello',end='')#empty end keyword argument 
+print('World')
 #Output:
 #HelloWorld
-print('Hello',end='')
-print('World')
 
-
-#When we pass multiple values to the print finction, it automatically sepeartes them with a space
+#When we pass multiple values to the print function, it automatically sepeartes them with a space
 print('cat', 'dog', 'mouse')
 #Output:
 #cat dog mouse
 
-#To set seperate char/string instead of a space, we can pass the sep keyword argument
+#To set seperate char/string, we can pass the sep keyword argument with a value (seperator)
 print('cat', 'dog', 'mouse', sep='ABC')
 #Output:
 #catABCdogABCmouseABC
