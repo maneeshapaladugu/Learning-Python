@@ -4,7 +4,7 @@ if password == 'Newpassword':
 else:
     print('Wrong password')
 
-
+#**********************************************
 
 print('Enter your name')
 name = input()
