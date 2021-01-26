@@ -17,7 +17,7 @@ while i < 5:
     
 print('My name is')
 #for i < 5:  #invalid syntax error
-for i in range (5): #i starts with 0 and eleviates the assignment/increment operation on i
+for i in range (5): #i starts with 0 and elevates the assignment/increment operation on i
     print('Printing Jimmy 5 times ' + str(i))
 
     
