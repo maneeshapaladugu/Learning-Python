@@ -15,11 +15,7 @@ Type "help", "copyright", "credits" or "license()" for more information.
 [{'name': 'Zophie', 'age': 7, 'color': 'grey'}, {'name': 'Jony', 'age': 5, 'color': 'black'}, {'name': 'Fat-tail', 'age': 5, 'color': 'grey'}, {'name': '???', 'age': -1, 'color': 'orange'}]
 >>> 
 >>> 
->>> 
->>> theBoard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ', 'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ', 'top-L': ' ', 'top-M': ' ', 'top-R': ' '}
->>> 
->>> theBoard
-{'top-L': ' ', 'top-M': ' ', 'top-R': ' ', 'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' '}
+
 >>> theBoard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ', 'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ', 'low-L': ' ', 'low-M': ' ', 'low-R': ' '}
 >>> 
 >>> theBoard
@@ -54,7 +50,6 @@ Type "help", "copyright", "credits" or "license()" for more information.
 >>> theBoard['top-M'] = 'o'
 >>> theBoard['top-R'] = 'o'
 >>> 
-KeyboardInterrupt
 >>> theBoard['mid-L'] = 'x'
 >>> theBoard['low-R'] = 'x'
 >>> 
@@ -70,29 +65,9 @@ KeyboardInterrupt
  'top-R': 'o'}
 >>> 
 >>> 
->>> def printBoard(board):
-	print(board['top-L'] +  '|' board['top-M'] + '|' + board['top-L'])
-	
-SyntaxError: invalid syntax
->>> 
->>> 
->>> def printBoard(board):
-	print(board['top-L'] +  '|' + board['top-M'] + '|' + board['top-L'])
-	print('-----')
-	print(board['mid-L'] +  '|' + board['mid-M'] + '|' + board['mid-L'])
-	print('-----')
-	print(board['low-L'] +  '|' + board['low-M'] + '|' + board['low-L'])
 
-	
->>> printBoard(theBoard)
-o|o|o
------
-x|X|x
------
- | | 
 >>> 
->>> 
->>> def printBoard(board):  #Oops!! the above function has mistakes..Here is the perfect
+>>> def printBoard(board): 
 	print(board['top-L'] +  '|' + board['top-M'] + '|' + board['top-R'])
 	print('-----')
 	print(board['mid-L'] +  '|' + board['mid-M'] + '|' + board['mid-R'])
