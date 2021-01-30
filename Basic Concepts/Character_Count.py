@@ -1,8 +1,11 @@
 message = 'It was a bright cold day in April, and the clocks were striking thirteen.'
+
+
+
 count = {} #This dictionary will store the character key and its count. Ex: r:5
 
-for character in message: #here, lower case and upper case counts seperately
-    count.setdefault(character, 0) #if character doesn't exists in count dictionary, make the character count as 0
+for character in message: #here, lower case and upper case counts are seperate
+    count.setdefault(character, 0) #if character doesn't exists in count dictionary, sets the character count as 0 as an initialization
     count[character] = count[character] + 1
 
 print(count)
@@ -15,7 +18,7 @@ message = 'It was a bright cold day in April, and the clocks were striking thirt
 count = {} #This dictionary will store the character key and its count. Ex: r:5
 
 for character in message.upper(): #returns an upper case from the string
-    count.setdefault(character, 0) #if character doesn't exists in count dictionary, make the character count as 0
+    count.setdefault(character, 0) #if character doesn't exists in count dictionary, sets the character count as 0 as an initialization
     count[character] = count[character] + 1
 
 print(count)
@@ -30,7 +33,7 @@ message = 'It was a bright cold day in April, and the clocks were striking thirt
 count = {} #This dictionary will store the character key and its count. Ex: r:5
 
 for character in message.upper(): #returns an upper case from the string
-    count.setdefault(character, 0) #if character doesn't exists in count dictionary, make the character count as 0
+    count.setdefault(character, 0) #if character doesn't exists in count dictionary, sets the character count as 0 as an initialization
     count[character] = count[character] + 1
 
 pprint.pprint(count)
