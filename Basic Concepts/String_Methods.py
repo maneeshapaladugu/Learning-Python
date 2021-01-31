@@ -1,7 +1,8 @@
 Python 3.9.0 (tags/v3.9.0:9cf6752, Oct  5 2020, 15:34:40) [MSC v.1927 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license()" for more information.
 >>> #String methods:
->>> #Unlike list methods, string methods return a new string value rathan than modifying string in place, Since strings are immutable, its not possible to modify the strings in place
+>>> #Unlike list methods, string methods return a new string value rather than modifying string in place,
+#Since strings are immutable, its not possible to modify the strings in place
 >>> 
 >>> 
 >>> spam = 'Hello world!'
@@ -12,22 +13,17 @@ Type "help", "copyright", "credits" or "license()" for more information.
 >>> spam.lower()
 'hello world!'
 >>> spam
-'Hello world!'
->>> #if you observe here, spam has not been changed
+'Hello world!' #if you observe here, spam has not been changed
+>>> 
 >>> answer = input()
-yes
+yes #here it waits for user input
 >>> answer
 'yes'
 >>> answer = input()
 YES#storing upper case
 >>> answer
-'YES#storing upper case'
->>> answer = input()
-YES
->>> answer
 'YES'
->>> if answer == 'yes'
-SyntaxError: invalid syntax
+
 >>> if answer == 'yes':
 	print('Playing again')
 
@@ -49,21 +45,19 @@ True
 >>> if answer.lower() == 'yes':
 	print('Playing again')
 
-	
+#Output:	
 Playing again
 >>> 
->>> #works with the upper case answer value
->>>  answer = input()
- 
-SyntaxError: unexpected indent
+
+
 >>> answer = input()
 yes
 >>> if answer.upper() == 'YES':
 	print('Playing again')
 
-	
+#Output:	
 Playing again
->>> #Works with the lower case answer value
+
 >>> 
 >>> 
 >>> #string methods isupper() and islower() returns the boolean value
@@ -92,11 +86,7 @@ True
 >>> 
 >>> 
 >>> spam = 'Hello world!'
->>> spam.isapha()
-Traceback (most recent call last):
-  File "<pyshell#56>", line 1, in <module>
-    spam.isapha()
-AttributeError: 'str' object has no attribute 'isapha'
+
 >>> spam.isalpha()
 False
 >>> spam = 'Hello'
@@ -122,13 +112,14 @@ False
 >>> spam = ' '
 >>> spam.isspace()
 True
+>>> #istitle() - returns true for a title case
 >>> spam = 'Hello World'
 >>> spam.istitle()
 True
 >>> spam = 'hello world'
 >>> spam.istitle()
 False
->>> #istitle() - returns true for a title case
+
 >>> 
 >>> 
 >>> 'Hello world'.isspace()
@@ -137,7 +128,7 @@ False
 True
 >>> 'This Is Title Case'.istitle()
 True
->>> 'hello world'.title()
+>>> 'hello world'.title() #returns a Title Case string
 'Hello World'
 >>> 
 >>> 
@@ -154,7 +145,8 @@ False
 >>> 
 >>> 
 >>> 
->>> #join() method when we have a list of strings that need to be joined together in to a single string value. On passing the list of strings join() returns a single string
+>>> #join() method: when we have a list of strings that needs to be joined together in to a single string,
+#On passing the list of strings, join() returns a single string
 >>> 
 >>> ','.join(['cats','rats','bats'])
 'cats,rats,bats'
@@ -172,7 +164,7 @@ rats
 bats
 >>> 
 >>> 
->>> #split() method does the opposite to join() method. Its called on a single string value and returns a list of strings
+>>> #split() method: It does the opposite to join() method. Its called on a single string value and returns a list of strings
 >>> 
 >>> 'My name is Simon'.split()
 ['My', 'name', 'is', 'Simon']
@@ -189,9 +181,9 @@ bats
 'Hello     '
 >>> 'Hello'.ljust(20)
 'Hello               '
->>> 'Hello'. rjust(20, '*')
+>>> 'Hello'. rjust(20, '*') #Hello to be right justified along with * instead of spaces
 '***************Hello'
->>>  #Hello to be right justified along with * in stead of spaces
+>>>  
 >>> 'Hello'.ljust(25, '-')
 'Hello--------------------'
 >>> 'Hello'.center(20)
@@ -210,11 +202,14 @@ bats
 >>> 'Hello'.rjust(10)
 '     Hello'
 >>> spam = 'Hello'.rjust(10)
+>>> #strip() method removes the whitespaces and returns a new string. Original string is not modified
 >>> spam.strip()
 'Hello'
->>> #strip() method removes the whitespaces
+
 >>> spam
 '     Hello'
+>>> #lstrip(), rstrip() - left strip and right strip
+#strip() - strip both left and right
 >>> spam = spam.strip()
 >>> spam
 'Hello'
@@ -222,14 +217,9 @@ bats
 'x'
 >>> '    x    '.lstrip()
 'x    '
->>> '    x    '.xstrip()
-Traceback (most recent call last):
-  File "<pyshell#135>", line 1, in <module>
-    '    x    '.xstrip()
-AttributeError: 'str' object has no attribute 'xstrip'
 >>> '    x    '.rstrip()
 '    x'
->>> #lstrip(), rstrip() - left strip and right strip
+
 >>> #we can pass strip() method a string with characters to strip instead of whitespaces
 >>> 
 >>> 'ManeeshaManeeshaManManeeManEESHA'.strip('ee')
@@ -253,14 +243,10 @@ AttributeError: 'str' object has no attribute 'xstrip'
 >>> spam.replace('e','XYZ')
 'HXYZllo thXYZrXYZ!'
 >>> 
->>> 
+>>> >>> #paste() method paste the string values that is already copied to clipboard
 >>> import pyperclip
 >>> pyperclip.copy('Hello!!!!!!')
->>> Hello!!!!!!
-SyntaxError: invalid syntax
->>> Hello!!!!!!
-SyntaxError: invalid syntax
 >>> pyperclip.paste()
 'Hello!!!!!!'
->>> #paste() method paste the string values that is already copied to clipboard
+
 >>> 
