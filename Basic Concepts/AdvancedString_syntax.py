@@ -4,17 +4,17 @@ Type "help", "copyright", "credits" or "license()" for more information.
 'Hello'
 >>> 'That is Alice's cat'
 SyntaxError: invalid syntax
->>> "That is Alice's cat" #Python understands that ' is not the end of string
+>>> "That is Alice's cat" #Now, Python understands that ' is not end of the string
 "That is Alice's cat"
->>> 'Say Hi to Alicse\'s mother' #using escape character'
-"Say Hi to Alicse's mother"
+>>> 'Say Hi to Alice\'s mother' #using escape character \'
+"Say Hi to Alice's mother"
 >>> 
->>> 
+>>> #Escape characters:
 >>> #single quote \'
 >>> #double quote \"
 >>> #tab \t
 >>> #new line \n
->>> #blackslash \\ #These are the excape characters
+>>> #blackslash \\ 
 >>> 
 >>> 
 >>> print('Hello there!\nHow are you?\nI\'m fine')
@@ -23,28 +23,33 @@ How are you?
 I'm fine
 >>> 
 >>> 
->>> #Raw strings: Raw strings helps us in treating backslash as a normal character
+>>> #Raw strings: Raw strings helps us in treating backslash as a normal character.
 >>> r'Hello'
 'Hello'
 >>> r'That is Carol\'s cat'
 "That is Carol\\'s cat"
 >>> #Don’t get confused with the output having two backslashes. It’s just to show it as a normal python string where backslash is being escaped
 >>> 
+>>> r'\''
+"\\'"
+>>> 
+>>> 
+>>> 
+>>> print(r'\'')
+\'
 >>> print(r'That is Carol\'s cat')
 That is Carol\'s cat
->>> print(r'Hi\nHello')
-Hi\nHello
+>>> 
 >>> 
 >>> print('Hi\xHello')#normal string
 SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \xXX escape
+
+>>> print(r'Hi\xHello')#raw string
+Hi\xHello
 >>> print(r'Hi\nHello')#raw string
 Hi\nHello
 >>> 
-KeyboardInterrupt
->>> print(r'Hi\xHello')#raw string
-Hi\xHello
->>> 
->>> 
+
 >>> #Some of the invalid raw strings are:
 >>> #r'\'  # missing end quote because the end quote is being escaped
 >>> #r'ab\\\'  # first two backslashes will escape each other, the third one will try to escape the end quote
@@ -54,9 +59,7 @@ Hi\xHello
 \'
 >>> print(r'ab\\')
 ab\\
->>> print(R'\\\"\)
-      
-SyntaxError: EOL while scanning string literal
+
 >>> print(R'\\\"')
 \\\"
 >>> 
@@ -75,11 +78,7 @@ SyntaxError: EOL while scanning string literal
 >>> #Multiline strings with triple quotes:
 >>> #Multiline strings starts and ends with ''' or """
 >>> #tabs or new lines in between the strings are considered as part of the string
->>> print("""Dear Alice,
-Congratulations for winning the competetion. Happy to hear this!
-Thanks,
-Joe"""
-KeyboardInterrupt
+
 >>> print("""Dear Alice,
 Congratulations for winning the competetion. Happy to hear this!
 Thanks,
@@ -101,9 +100,9 @@ Joe"""
 >>> 
 
 >>> #Similarities between strings and lists:
->>> 'Hello world!'
+>>> 'Hello world!' #within single quotes
 'Hello world!'
->>> "Hello world!"
+>>> "Hello world!" #within double quotes
 'Hello world!'
 >>> spam = 'Hello world!'
 >>> spam
